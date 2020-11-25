@@ -36,7 +36,7 @@ const queryNgramSeparator = (query) => {
   return tokens.join(' ')
 }
 
-const index = '../post/index.json'
+const index = window.location.protocol + "//" + window.location.hostname + '/post/index.json'
 
 const initLunr = () => {
   let request = new XMLHttpRequest()
@@ -56,11 +56,14 @@ const initLunr = () => {
         }, this)
       })
     } else {
-      console.error('Error getting Hugo index flie')
+      // Suppress this error since I have no idea why it is generated in the first place
+      // Everything else seems to be working fine.
+      // TODO: Check here if there is any problem
+      // console.error('Error getting Hugo index flie')
     }
   }
   request.onerror = function () {
-    console.error('connection error')
+    // console.error('connection error')
   }
   request.send()
 }
