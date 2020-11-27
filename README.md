@@ -1,3 +1,7 @@
+# Fork of the original
+
+### This is a fork over the original harbor theme. I customized some things for my blog. Go also check the original.
+--- 
 # [harbor](https://themes.gohugo.io/harbor/) - Simple Hugo Theme
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=matsuyoshi30_harbor&metric=alert_status)](https://sonarcloud.io/dashboard?id=matsuyoshi30_harbor)
@@ -185,7 +189,7 @@ tags = ["tags here"]
 draft = false
 toc = false
 backtotop = false
-disable_comment = true <!-- disable disqus -->
+disable_comments = true <!-- disable disqus -->
 +++
 
 # Title
