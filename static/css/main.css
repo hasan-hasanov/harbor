@@ -452,10 +452,12 @@ footer .theme-by {
 footer a {
   color: #050505;
   font-weight: bold;
+  margin-right: 4px;
 }
 
 footer em {
   cursor: pointer;
+  font-size: 16px;
 }
 
 @media (min-width: 600px) {
