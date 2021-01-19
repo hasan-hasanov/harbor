@@ -169,5 +169,13 @@ const renderResults = (results) => {
   })
 }
 
+document.getElementById('dark-mode-theme').disabled =
+  !window.matchMedia('(prefers-color-scheme: dark)').matches
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+  document.getElementById('dark-mode-theme').disabled =
+    !window.matchMedia('(prefers-color-scheme: dark)').matches
+})
+
 initLunr()
 initUI()
